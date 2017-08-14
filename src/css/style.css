@@ -1,0 +1,9 @@
+.timer {
+  display: block;
+  font-size: 150px;
+}
+
+.btn {
+  cursor: pointer;
+  margin-right: 10px;
+}
