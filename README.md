@@ -1,6 +1,17 @@
 # RedFruitTimer
 A timer for the [Pomodoro Technique](https://en.wikipedia.org/wiki/Pomodoro_Technique), built using React.
 
+## Getting Started
+
+To run this app on your own machine:
+
+```
+git clone https://github.com/joedaniels/RedFruit-Timer.git
+cd RedFruit-Timer
+npm install
+npm start
+```
+
 ## Features
 
 - Timer counting down from:
