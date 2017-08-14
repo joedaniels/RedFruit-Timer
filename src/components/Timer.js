@@ -111,9 +111,9 @@ export default class Timer extends Component {
   }
 
   static defaultProps = {
-    pomodoroLength: 1,
-    shortBreak: 2,
-    longBreak: 3
+    pomodoroLength: 1500,
+    shortBreak: 300,
+    longBreak: 900
   }
 
   render() {
