@@ -5,7 +5,7 @@ export default class Navbar extends Component {
     return (
       <nav className="navbar navbar-light bg-light">
         <div className="container">
-            <a className="navbar-brand" href="#">RedFruit Timer</a>
+            <span className="navbar-brand">RedFruit Timer</span>
 
             <span className="navbar-text">Created by <a href="https://joedaniels.co.uk/">Joe Daniels</a></span>
         </div>
