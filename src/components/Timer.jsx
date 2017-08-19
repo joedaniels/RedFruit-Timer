@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import mp3_file from '../assets/audio/alarm.mp3'
 
 export default class Timer extends Component {
     constructor(props) {
@@ -26,6 +27,7 @@ export default class Timer extends Component {
 
     tick() {
         if (this.state.clock === 0) {
+            this.playAlarm()
             this.pause()
 
             if (this.state.timerLength === (this.props.shortBreak || this.props.longBreak)) {
@@ -76,6 +78,10 @@ export default class Timer extends Component {
         return (n < 10 ? "0" : "") + n
     }
 
+    playAlarm() {
+        var alarm = document.getElementById('alarm')
+        alarm.play()
+    }
 
     static defaultProps = {
         pomodoroLength: 1500,
@@ -90,6 +96,7 @@ export default class Timer extends Component {
                 <button className="btn btn-primary btn-lg" onClick={this.countdown}>Start</button>
                 <button className="btn btn-secondary btn-sm" onClick={this.pause}>Pause</button>
                 <button className="btn btn-dark btn-sm" onClick={this.reset}>Reset</button>
+                <audio src={mp3_file} id="alarm"></audio>
             </section>
         )
     }
