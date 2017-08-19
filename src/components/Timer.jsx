@@ -27,7 +27,9 @@ export default class Timer extends Component {
 
     tick() {
         if (this.state.clock === 0) {
-            this.playAlarm()
+            if (this.props.alarmEnabled) {
+                this.playAlarm()
+            }
             this.pause()
 
             if (this.state.timerLength === (this.props.shortBreak || this.props.longBreak)) {
