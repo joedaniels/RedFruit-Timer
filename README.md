@@ -1,6 +1,8 @@
 # RedFruitTimer
 A timer for the [Pomodoro Technique](https://en.wikipedia.org/wiki/Pomodoro_Technique), built using React.
 
+![image](http://i.imgur.com/DOmfgfX.png)
+
 ## Getting Started
 
 To run this app on your own machine:
@@ -19,14 +21,15 @@ npm start
   - 5 minutes after each Pomodoro
   - 15 minutes after 4 Pomodoro's
 - Start, Pause, Reset buttons
+- Alarm when timer reaches 00:00
+- Settings
+  - Turn alarm on/off
 
 ## Coming soon
 
-- Alarm when Pomodoro finished
 - Desktop notifications
 - Settings
   - Change long break length
-  - Enable/disable alarm
 - Show timer status in title of web app
 - Keyboard shortcuts
 - **User Authentication:**
