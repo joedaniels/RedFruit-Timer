@@ -1,5 +1,4 @@
 import React, {Component} from 'react'
-import mp3_file from '../assets/audio/alarm.mp3'
 
 export default class Timer extends Component {
     constructor(props) {
@@ -30,8 +29,10 @@ export default class Timer extends Component {
             if (this.props.alarmEnabled) {
                 this.playAlarm()
             }
+            if (this.props.notificationsEnabled) {
+                this.notification(this.state.timerLength)
+            }
             this.pause()
-
             if (this.state.timerLength === (this.props.shortBreak || this.props.longBreak)) {
                 this.setState({
                     clock: this.props.pomodoroLength,
@@ -83,6 +84,28 @@ export default class Timer extends Component {
     playAlarm() {
         var alarm = document.getElementById('alarm')
         alarm.play()
+    }
+
+    notification(periodCompleted) {
+        if (periodCompleted === this.props.shortBreak) {
+            return new Notification("5 Minute Break Over!", {
+                body: "Time for another Pomodoro.",
+                icon: "./assets/img/red-fruit-timer.png",
+                requireInteraction: true
+            });
+        } else if (periodCompleted === this.props.longBreak) {
+            return new Notification("15 Minute Break Over!", {
+                body: "Time to get back to work.",
+                icon: "./assets/img/red-fruit-timer.png",
+                requireInteraction: true
+            });
+        } else {
+            return new Notification("Pomodoro Finished!", {
+                body: "Time for a break. Whoop!",
+                icon: "./assets/img/red-fruit-timer.png",
+                requireInteraction: true
+            });
+        }
     }
 
     static defaultProps = {

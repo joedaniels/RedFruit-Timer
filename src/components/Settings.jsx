@@ -12,6 +12,12 @@ export default class Settings extends Component {
                             <span>Play alarm at 00:00</span>
                         </label>
                     </div>
+                    <div className="form-check">
+                        <label className="form-check-label">
+                            <input className="form-check-input" type="checkbox" defaultChecked={this.props.notificationsEnabled} onChange={this.props.requestNotifications} />
+                            <span>Desktop notifications</span>
+                        </label>
+                    </div>
                 </div>
             </div>
         )
