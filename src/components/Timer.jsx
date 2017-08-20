@@ -74,11 +74,7 @@ export default class Timer extends Component {
         let m = Math.floor(timeLeft / 60)
         let s = Math.floor(timeLeft % 60)
 
-        return this.addZero(m) + ":" + this.addZero(s)
-    }
-
-    addZero(n) {
-        return (n < 10 ? "0" : "") + n
+        return ((m < 10 ? "0" : "") + m) + ":" + ((s < 10 ? "0" : "") + s)
     }
 
     playAlarm() {
@@ -121,7 +117,7 @@ export default class Timer extends Component {
                 <button className="btn btn-primary btn-lg" onClick={this.countdown}>Start</button>
                 <button className="btn btn-secondary btn-sm" onClick={this.pause}>Pause</button>
                 <button className="btn btn-dark btn-sm" onClick={this.reset}>Reset</button>
-                <audio src={mp3_file} id="alarm"></audio>
+                <audio src='./assets/audio/alarm.mp3' id="alarm"></audio>
             </section>
         )
     }
