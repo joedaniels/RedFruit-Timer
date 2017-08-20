@@ -22,12 +22,11 @@ npm start
   - 15 minutes after 4 Pomodoro's
 - Start, Pause, Reset buttons
 - Alarm when timer reaches 00:00
-- Settings
-  - Turn alarm on/off
+- Desktop notifications
+- Local storage to remember changed Settings
 
 ## Coming soon
 
-- Desktop notifications
 - Settings
   - Change long break length
 - Show timer status in title of web app
@@ -40,3 +39,6 @@ npm start
 
 ## License
 [MIT License](https://github.com/joedaniels/pomodoro-technique-timer/blob/master/LICENSE) © [Joe Daniels](https://joedaniels.co.uk/)
+
+## Credits
+Icons made by [Freepik](http://www.freepik.com) from [www.flaticon.com](https://www.flaticon.com/) is licensed by [CC 3.0 BY](http://creativecommons.org/licenses/by/3.0/)
