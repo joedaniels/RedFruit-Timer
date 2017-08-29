@@ -75,13 +75,13 @@ export default class App extends Component {
                                 </div>
 
                                 <div className="form-group row">
-                                    <label className="col-sm-4 col-form-label">
+                                    <label className="col-sm-5 col-form-label">
                                         Long Break Length
                                     </label>
-                                    <div className="col-sm-8">
+                                    <div className="col-sm-7">
                                         <input 
                                             type="number" 
-                                            className="form-control col-sm-2" 
+                                            className="form-control col-sm-3" 
                                             value={(this.state.longBreakLength)/60} 
                                             onChange={this.changeLongBreak}
                                             step="1" 
