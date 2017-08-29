@@ -47,6 +47,7 @@ export default class Timer extends Component {
             }
         } else {
             this.setState({ clock: this.state.clock - 1 })
+            document.title = this.prettifyClock(this.state.clock)
         }
     }
 
