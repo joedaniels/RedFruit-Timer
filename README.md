@@ -1,4 +1,4 @@
-# RedFruitTimer
+# Red Fruit Timer
 A timer for the [Pomodoro Technique](https://en.wikipedia.org/wiki/Pomodoro_Technique), built using React.
 
 <img src="http://i.imgur.com/frIn0oq.png" width="600">
@@ -8,8 +8,8 @@ A timer for the [Pomodoro Technique](https://en.wikipedia.org/wiki/Pomodoro_Tech
 To run this app on your own machine:
 
 ```
-git clone https://github.com/joedaniels/RedFruit-Timer.git
-cd RedFruit-Timer
+git clone https://github.com/joedaniels/red-fruit-timer.git
+cd red-fruit-timer
 npm install
 npm start
 ```
